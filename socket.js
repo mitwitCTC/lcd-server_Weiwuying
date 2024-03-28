@@ -10,7 +10,7 @@ module.exports = server => {
         console.log('deerRudolph is on')
         // ['https://i.imgur.com/GmAPuSn.jpg']
         try {
-            let fetch_result = await fetch(`http://${ip}/set`)
+            let fetch_result = await fetch(`http://${ip}/api/set`)
             let result_data = await fetch_result.json()
             console.log(result_data)
         } catch (error) {
